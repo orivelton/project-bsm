@@ -1475,7 +1475,7 @@ h2.typoh2 {
 }
 
 .top-nav__link {
-    margin-top: 260px;
+    margin-top: 25%;
 }
 
 ul.top-nav__link li {
@@ -1507,6 +1507,10 @@ ul.top-nav__link li a.top-nav__link-first {
     color: #8b6e4a;
     font-family: 'Museo Sans 700';
     font-size: 31px;
+}
+
+ul.top-nav__link li.top-nav__link-first {
+    padding-bottom: 01.5em;
 }
 
 ul.top-nav__link li a.top-nav__link-first:hover {
