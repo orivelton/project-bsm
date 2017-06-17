@@ -9,7 +9,7 @@ $(function() {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var nome = $("#nome").val();
-            var telefone = $("#telefone").val();            
+            var telefone = $("#telefone").val();
             var email = $("#email").val();
             var message = $("#message").val();
             var firstName = nome; // For Success/Failure Message
@@ -27,10 +27,8 @@ $(function() {
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true' onclick='fechar()'>&times;")
-                        .append("</button>");
-                    $('#success > .alert-success')
-                        .append("<strong>Obrigado ! Sua mensagem foi enviada, entraremos em contato o mas rápido possível. </strong>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true' onclick='fechar()'>&times;").append("</button>");
+                    $('#success > .alert-success').append("<strong>Obrigado ! Sua mensagem foi enviada, entraremos em contato o mas rápido possível. </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 

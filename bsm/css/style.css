@@ -1536,12 +1536,12 @@ ul.top-nav__link li a.top-nav__link-first:hover {
     display: block;
     max-width: inherit;
     height: 80%;
-    color: #ffffff;
-    padding: 25% 25px 0 25px;
+    color: #fff;
+    padding: 22% 25px 0 25px;
     font-family: 'Museo Sans 700';
     font-size: 29px;
     letter-spacing: 15px;
-    line-height: 40px;
+    line-height: 39px;
 }
 
 .box-hover:hover {
@@ -1565,21 +1565,26 @@ ul.top-nav__link li a.top-nav__link-first:hover {
 }
 
 .contato {
-  background: url('../img/contato-background.jpg')  no-repeat;
+  background: url('../img/contato-background-all.jpg')  no-repeat center top;
+  background-position: 46% 0;
+}
+
+#contact {
+      margin-top: 510px;
 }
 
 #contact .form-control {
     background: #efefef;
     border: 0;
-    border-radius: 4px 4px 0 0;
-    padding: 30px 25px;
+    border-radius: 0;
+    padding: 20px 25px;
 }
 
 
 #contact label {
   color: #000000;
   font-family: 'Museo Sans 300';
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 8px;
 }
 
@@ -1595,11 +1600,44 @@ ul.top-nav__link li a.top-nav__link-first:hover {
 
 .form-control::-webkit-input-placeholder {
   color: #b5b5b5;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .btn-xl2 {
-  background: #8b6e4a;
-  color: #FFFFFF;
-  float: left;
+    background: #8b6e4a;
+    color: #fff;
+    float: left;
+    width: 290px;
+    padding: 19px 0;
+    border-radius: 50px;
+    font-family: 'Museo Sans 300';
+    font-size: 25px;
+    letter-spacing: 13px;
+    margin-top: 30px;
 }
+
+.btn-xl2:hover,
+.btn-xl2:focus {
+    color: #fff;
+}
+
+#message {
+    min-height: 140px;
+}
+
+.text-danger {
+  color: red;
+}
+
+/*Footer*/
+footer {
+  margin-top: 100px;
+  width: 100%;
+  background: #000000;
+  overflow: hidden;
+}
+.footer {
+  height: 190px;
+  background: url('../img/footer.png') no-repeat 0 -44px;
+}
+/*Footer*/
