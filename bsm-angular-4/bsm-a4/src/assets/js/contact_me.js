@@ -15,7 +15,7 @@ $(function() {
             var firstName = nome; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "./assets/mail/contact_me.php",
                 type: "POST",
                 data: {
                     nome: nome,

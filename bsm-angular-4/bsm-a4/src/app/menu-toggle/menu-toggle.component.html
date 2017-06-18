@@ -5,7 +5,7 @@
         </button>
         <ul class="top-nav__link">
             <li class="" *ngFor="let menuToggles of menuToggle; let i=index" [class.top-nav__link-first]="i == 0">
-                <a href="index.html" title="menu" [class.top-nav__link-first]="i == 0">{{menuToggles.name}}</a>
+                <a [routerLink]="menuToggles.routerLink" title="menu" [class.top-nav__link-first]="i == 0" (click)="toggleClassBody(); backgroundBody(menuToggles.routerLink)">{{menuToggles.name}}</a>
             </li>
         </ul>
     </nav>
