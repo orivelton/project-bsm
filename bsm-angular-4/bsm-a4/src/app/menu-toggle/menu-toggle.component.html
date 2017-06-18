@@ -1,0 +1,17 @@
+<div class="top-nav">
+    <nav class="top-nav-bottom cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+        <button id="showRightPush2" (click)="toggleClassBody()">
+            <span class="more-menu more-menu--close">&times;</span>
+        </button>
+        <ul class="top-nav__link">
+            <li class="" *ngFor="let menuToggles of menuToggle; let i=index" [class.top-nav__link-first]="i == 0">
+                <a href="index.html" title="menu" [class.top-nav__link-first]="i == 0">{{menuToggles.name}}</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main buttonset">
+        <button id="showRightPush" (click)="toggleClassBody()">
+            <span class="more-menu">+</span>
+        </button>
+    </div>
+</div>
