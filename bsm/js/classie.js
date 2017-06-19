@@ -29,7 +29,17 @@ showRightPush.onclick = function() {
     classie.toggle(body, 'cbp-spmenu-push-toleft');
     classie.toggle(menuRight, 'cbp-spmenu-open');
     disableOther('showRightPush');
+    $('.pages-menu').removeClass('hidden');
 };
+
+
+$('.img-globe').click(function () {
+    classie.toggle(body, 'cbp-spmenu-push-toleft');
+    classie.toggle(menuRight, 'cbp-spmenu-open');
+    disableOther('showRightPush');
+    $('#showRightPush').removeClass('active');
+    $('.worlds-menu').removeClass('hidden');
+});
 
 //clean URL
 var url = window.location.href;
@@ -54,6 +64,9 @@ function disableOther(button) {
 
 $('#showRightPush2').click(function () {
     $('#showRightPush').click();
+    $('#showRightPush').removeClass('active');
+    $('.pages-menu').addClass('hidden');
+    $('.worlds-menu').addClass('hidden');
 });
 
 // classList support for class management

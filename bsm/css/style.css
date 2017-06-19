@@ -28,6 +28,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Museo Sans 900';
+    src: url('../fonts/MuseoSans-900.eot');
+    src: url('../fonts/MuseoSans-900.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSans-900.woff2') format('woff2'),
+        url('../fonts/MuseoSans-900.woff') format('woff'),
+        url('../fonts/MuseoSans-900.ttf') format('truetype'),
+        url('../fonts/MuseoSans-900.svg#MuseoSans-900') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 * {outline: none;}
 html,
 body {
@@ -1520,6 +1533,19 @@ ul.top-nav__link li a.top-nav__link-first:hover {
 .img-globe {
     float: right;
     margin-top: 40px;
+    webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.img-globe:hover {
+    opacity: 1;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .cbp-spmenu-push-toleft .img-globe {
@@ -1641,3 +1667,45 @@ footer {
   background: url('../img/footer.png') no-repeat 0 -44px;
 }
 /*Footer*/
+
+/*Menu Mundos*/
+
+.cbp-spmenu-vertical ul.worlds-menu {
+    margin-top: 12%;
+}
+
+.cbp-spmenu-vertical ul.worlds-menu ul {
+    padding: 0;
+}
+.cbp-spmenu-vertical ul.worlds-menu li {
+    width: none;
+    text-align: left;
+    padding: 1em 0.4em;
+}
+
+.cbp-spmenu-vertical ul.worlds-menu li span {
+    font-family: 'Museo Sans 900';
+    text-transform: uppercase;
+    color: #1f355e;
+    font-size: 20px;
+}
+
+.cbp-spmenu-vertical ul.worlds-menu li.worlds-menu-sub {
+    font-family: 'Museo Sans 300';
+    color: #1f355e;
+    font-size: 18px;
+    padding: 2px 0.4em;
+}
+
+.cbp-spmenu-vertical ul.worlds-menu li.worlds-menu-sub::before {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 12px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+    border-left: 20px solid #8b6e4a;
+}
+/* END Menu Mundos*/
