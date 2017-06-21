@@ -1606,6 +1606,14 @@ ul.top-nav__link li a.top-nav__link-first:hover {
     padding: 20px 25px;
 }
 
+#contact textarea.form-control {
+  max-width: 1110px;
+}
+
+#contact .text-required {
+  color: 000000;
+  font-size: 12.5px;
+}
 
 #contact label {
   color: #000000;
@@ -1634,10 +1642,10 @@ ul.top-nav__link li a.top-nav__link-first:hover {
     color: #fff;
     float: left;
     width: 290px;
-    padding: 19px 0;
+    padding: 5.5px 0;
     border-radius: 50px;
     font-family: 'Museo Sans 300';
-    font-size: 25px;
+    font-size: 19px;
     letter-spacing: 13px;
     margin-top: 30px;
 }
@@ -1681,7 +1689,7 @@ footer {
 .cbp-spmenu-vertical ul.worlds-menu li {
     width: none;
     text-align: left;
-    padding: 1em 0.4em;
+    padding: 0.4em 0.4em;
 }
 
 .cbp-spmenu-vertical ul.worlds-menu li span {
