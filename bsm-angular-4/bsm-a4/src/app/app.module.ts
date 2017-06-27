@@ -7,6 +7,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { HeaderComponent } from './header/header.component';
 import { routing } from './app.routing';
 import { FooterComponent } from './footer/footer.component';
+import { WorldsComponent } from './worlds/worlds.component';
 
 @NgModule({
   declarations: [ 
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     MenuToggleComponent,
     ContatoComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    WorldsComponent
   ],
   imports: [
     BrowserModule,

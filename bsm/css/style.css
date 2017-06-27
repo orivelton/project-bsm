@@ -1483,12 +1483,12 @@ h2.typoh2 {
 }
 
 .cbp-spmenu {
-    background: url('../img/background-menu.png') #fff no-repeat 62px -86px;
-    background-size: 100%;
+    background: url('../img/background-menu.png') #fff no-repeat 62px 0;
+    background-size: 96%;
 }
 
 .top-nav__link {
-    margin-top: 20%;
+    margin-top: 16%;
 }
 
 ul.top-nav__link li {
@@ -1679,7 +1679,7 @@ footer {
 /*Menu Mundos*/
 
 .cbp-spmenu-vertical ul.worlds-menu {
-    margin-top: 12%;
+    margin-top: 7%;
     margin-left: 30px;
 }
 
@@ -1689,7 +1689,7 @@ footer {
 .cbp-spmenu-vertical ul.worlds-menu li {
     width: none;
     text-align: left;
-    padding: 0.4em 0.4em;
+    padding: 1em 0.4em;
 }
 
 .cbp-spmenu-vertical ul.worlds-menu li span {
@@ -1718,3 +1718,30 @@ footer {
     border-left: 20px solid #8b6e4a;
 }
 /* END Menu Mundos*/
+
+/*Start Sobre*/
+.sobre {
+    background: url('../img/sobre-background.jpg')  no-repeat center top;
+    background-position: 46% 0;
+}
+/*End Sobre*/
+
+/*Start Midia*/
+.midia {
+    background: url('../img/midia-background.jpg')  no-repeat center top;
+    background-position: 46% 0;
+}
+/*End Midia*/
+
+/*Start Sport e Educacao*/
+.sportes-e-educacao {
+    background: url('../img/sportes-e-educacao-background.jpg')  no-repeat center top;
+    background-position: 46% 0;
+}
+/*End Sport e Educacao*/
+/*Start Sport e boutique sponsorship*/
+.boutique-sponsorship {
+    background: url('../img/boutique-sponsorship-background.jpg')  no-repeat center top;
+    background-position: 46% 0;
+}
+/*End Sport e boutique-sponsorship*/

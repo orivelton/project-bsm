@@ -8,6 +8,8 @@
                 <a [routerLink]="menuToggles.routerLink" title="menu" [class.top-nav__link-first]="i == 0" (click)="toggleClassBody(); backgroundBody(menuToggles.routerLink)">{{menuToggles.name}}</a>
             </li>
         </ul>
+
+        <bsm-worlds></bsm-worlds>
     </nav>
     <div class="main buttonset">
         <button id="showRightPush" (click)="toggleClassBody()">

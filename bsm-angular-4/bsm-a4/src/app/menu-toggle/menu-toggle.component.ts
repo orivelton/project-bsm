@@ -9,13 +9,13 @@ export class MenuToggleComponent {
   constructor() {}
 
   menuToggle = [
-    {name: 'menu', title: 'menu', routerLink: ''},
-    {name: 'sobre', title: 'sobre', routerLink: ''},
-    {name: 'brand', title: 'brand', routerLink: ''},
-    {name: 'mídia', title: 'mídia', routerLink: ''},
-    {name: 'esportes & educação', title: 'esportes & educação', routerLink: ''},
-    {name: 'BSM no mundo', title: 'BSM no mundo', routerLink: 'BSM no mundo'},
-    {name: 'contato', title: 'contato', routerLink: '/contato'},
+    {name: 'Menu', title: 'Menu', routerLink: ''},
+    {name: 'Sobre', title: 'Sobre', routerLink: ''},
+    {name: 'Boutique Sponsorship', title: 'Boutique Sponsorship', routerLink: ''},
+    {name: 'Mídia', title: 'Mídia', routerLink: ''},
+    {name: 'Sportes & Educação', title: 'Sportes & Educação', routerLink: ''},
+    {name: 'BSM no Mundo', title: 'BSM no Mundo', routerLink: ''},
+    {name: 'Contato', title: 'Contato', routerLink: '/contato'},
   ];
 
   toggleClassBody () {
