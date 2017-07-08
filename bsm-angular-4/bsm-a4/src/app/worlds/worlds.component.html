@@ -1,6 +1,6 @@
  <!-- Menu Mundos -->
-<!--<ul class="top-nav__link col-md-12 worlds-menu">
-    <li class="col-md-12">
+<ul class="top-nav__link col-md-12 worlds-menu hidden">
+    <li class="col-md-12 wd100">
         <a class="top-nav__link-first" title="menu">BSM no mundo</a>
     </li>
     <li class="col-md-4">
@@ -69,13 +69,7 @@
             </li>
         </ul>
     </li>
-</ul>-->
-<ul class="maria">
-    <li *ngFor="let varbsmWorlds of bsmWorld">{{varbsmWorlds.continents.nameContinent}}</li>
-
-    <p *ngFor="let myObjs of myObj">
-        {{myObjs.name}}
-        <br>
-        {{myObjs1.cars.name}}
-        </p>
 </ul>
+<!--<ul class="top-nav__link col-md-12 worlds-menu">
+    <li *ngFor="let continent of continents" class="col-md-4"><a class="top-nav__link-first">{{continent.name}}</a></li>
+</ul>-->

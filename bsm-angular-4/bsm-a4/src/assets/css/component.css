@@ -33,9 +33,14 @@
 }
 .cbp-spmenu-vertical ul li {
     padding: 1em 0.7em;
-    width: 100%;
     overflow: hidden;
 }
+
+.cbp-spmenu-vertical ul li.wd100 {
+    width: 100%;
+}
+
+
 .cbp-spmenu-horizontal {
     width: 100%;
     height: 150px;

@@ -1683,11 +1683,10 @@ footer {
     margin-left: 30px;
 }
 
-.cbp-spmenu-vertical ul.worlds-menu ul {
+    .cbp-spmenu-vertical ul.worlds-menu ul {
     padding: 0;
 }
 .cbp-spmenu-vertical ul.worlds-menu li {
-    width: none;
     text-align: left;
     padding: 1em 0.4em;
 }
@@ -1718,3 +1717,30 @@ footer {
     border-left: 20px solid #8b6e4a;
 }
 /* END Menu Mundos*/
+
+/*Start Sobre*/
+.sobre {
+    background: url('../img/sobre-background.jpg')  no-repeat center top;
+    background-position: 46% 0;
+}
+/*End Sobre*/
+
+/*Start Midia*/
+.midia {
+    background: url('../img/midia-background.jpg')  no-repeat center top;
+    background-position: 46% 0;
+}
+/*End Midia*/
+
+/*Start Sport e Educacao*/
+.sportes-e-educacao {
+    background: url('../img/sportes-e-educacao-background.jpg')  no-repeat center top;
+    background-position: 46% 0;
+}
+/*End Sport e Educacao*/
+/*Start Sport e boutique sponsorship*/
+.boutique-sponsorship {
+    background: url('../img/boutique-sponsorship-background.jpg')  no-repeat center top;
+    background-position: 46% 0;
+}
+/*End Sport e boutique-sponsorship*/

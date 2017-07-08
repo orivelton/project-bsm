@@ -1,18 +1,17 @@
 <div class="top-nav">
     <nav class="top-nav-bottom cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-        <button id="showRightPush2" (click)="toggleClassBody()">
+        <button id="showRightPush2" (click)="toggleClassBody(); hideMenuText()">
             <span class="more-menu more-menu--close">&times;</span>
         </button>
-        <ul class="top-nav__link">
+        <ul class="top-nav__link menu-site hidden">
             <li class="" *ngFor="let menuToggles of menuToggle; let i=index" [class.top-nav__link-first]="i == 0">
                 <a [routerLink]="menuToggles.routerLink" title="menu" [class.top-nav__link-first]="i == 0" (click)="toggleClassBody(); backgroundBody(menuToggles.routerLink)">{{menuToggles.name}}</a>
             </li>
         </ul>
-
         <bsm-worlds></bsm-worlds>
     </nav>
     <div class="main buttonset">
-        <button id="showRightPush" (click)="toggleClassBody()">
+        <button id="showRightPush" (click)="toggleClassBody(); showMenuSite()">
             <span class="more-menu">+</span>
         </button>
     </div>
