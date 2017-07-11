@@ -1737,6 +1737,32 @@ footer {
 }
 /*End Sport e boutique-sponsorship*/
 
+@media(max-height: 480px) {
+  .container .container-hover {
+    height: 80%;
+    border-radius: 190px 190px 0 0;
+    padding-top: 150px;
+  }
+
+  .container-hover .box-hover {
+        letter-spacing: 7px;
+        line-height: 29px;
+  }
+
+  .container-hover .menu-hover-mobile {
+        margin: 7px 0;
+  }
+
+  .box-hover-um {
+    margin-top: -14px;
+  }
+  .box-hover-dois{
+    margin-top: 9px;
+  }
+  .box-hover-tres{
+    margin-top: -12px;
+  }
+}
 /*Media < 1024*/
 @media(min-width: 1024px) {
 
@@ -1748,17 +1774,74 @@ footer {
     border: 0;
     font-size: 17px;
     padding: 0;
-    width: 80%;
+    width: 100%;
     float: left;
+    letter-spacing: 8px;
+    border-radius: 0;
   }
 
+  .more-1, .more-3 {
+        margin-top: -28px;
+  }
+
+  .top-nav__link {
+    margin-top: 37%;
+    padding-left: 13px;
+  }
   .no-padding-mobile {
     padding: 0;
+  }
+
+  .cbp-spmenu {
+    background-size: 317%;
+    background-position-x: 36px;
+  }
+
+  ul.top-nav__link.pages-menu li a {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .cbp-spmenu-vertical ul.worlds-menu {
+    margin-left: 4px;
+  }
+
+  .scroll-mobile ul.top-nav__link li a.top-nav__link-first,
+  .scroll-mobile ul.top-nav__link li a {
+    font-size: 16px;
+  }
+
+  .scroll-mobile ul.top-nav__link li > a::after  {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 12px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+    border-left: 10px solid #8b6e4a;
+  }
+
+  .scroll-mobile ul.top-nav__link li > a.top-nav__link-first::after  {
+    display: none;
+  }
+
+  .scroll-mobile {
+    overflow-y: scroll;
+    height: 100%;
+    margin-top: 38%;
+    width: 100%;
+    padding-bottom: 50%;
   }
 
   .container-hover .more-menu--close {
     position: relative;
     float: right;
+  }
+
+  .sub-menu-worlds {
+    display: none;
   }
 
   .img-globe {
@@ -1796,16 +1879,20 @@ footer {
   }
 
   .menu-hover-mobile {
-    margin: 25px 0;
+      margin: 25px 0 0 0;
+      padding-right: 0;
   }
 
   .container-hover {
     position: absolute;
     bottom: 0;
-    border: 1px solid #00f;
+    border: 1px solid #FFFFFF;
     width: 90%;
     left: 5%;
-    padding: 15px 0;
+    padding: 43% 0 0 0;
+    border-bottom: 0;
+    border-radius: 270px 270px 0 0;
+    height: 80%;
   }
 
   .home {

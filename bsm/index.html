@@ -36,7 +36,7 @@
                     </div>
                     <img src="img/globe.png" alt="" class="img-globe col-xs-3 col-sm-3">
                     <div class="main buttonset hidden-md hidden-lg col-xs-1 col-sm-1">
-                        <button id="showRightPush">
+                        <button id="showRightPush" class="showRightPush">
                             <span class="more-menu">+</span>
                         </button>
                     </div>
@@ -71,81 +71,83 @@
                         </ul>
 
                         <!-- Menu Mundos -->
+                        <div class="scroll-mobile">
+                          <ul class="top-nav__link col-xs-12 col-sm-12 col-md-12 worlds-menu hidden">
+                              <li class="col-xs-12 col-sm-12 col-md-12">
+                                  <a class="top-nav__link-first" title="menu">BSM no mundo</a>
+                              </li>
+                              <li class="col-xs-12 col-sm-12 col-md-4">
+                                  <a title="Américas" class="col-xs-12 col-sm-12 col-md-12 js-toggle-sub">Américas</a>
+                                  <ul class="col-xs-12 col-sm-12 col-md-12 sub-menu-worlds">
+                                      <li>
+                                          <ul>
+                                              <li><span>Brasil</span></li>
+                                              <li class="worlds-menu-sub">São Paulo</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>Bolívia</span></li>
+                                              <li class="worlds-menu-sub">La Paz</li>
+                                          </ul>
 
-                        <ul class="top-nav__link col-md-12 worlds-menu hidden">
-                            <li class="col-md-12">
-                                <a class="top-nav__link-first" title="menu">BSM no mundo</a>
-                            </li>
-                            <li class="col-md-4">
-                                <a title="Américas" class="col-md-12">Américas</a>
-                                <ul class="col-md-12">
-                                    <li>
-                                        <ul>
-                                            <li><span>Brasil</span></li>
-                                            <li class="worlds-menu-sub">São Paulo</li>
-                                        </ul>
-                                        <ul>
-                                            <li><span>Bolívia</span></li>
-                                            <li class="worlds-menu-sub">La Paz</li>
-                                        </ul>
+                                          <ul>
+                                              <li><span>ESTADOS UNIDOS</span></li>
+                                              <li class="worlds-menu-sub">Califórnia</li>
+                                              <li class="worlds-menu-sub">Flórida</li>
+                                              <li class="worlds-menu-sub">Nevada</li>
+                                              <li class="worlds-menu-sub">Washington, DC</li>
+                                          </ul>
 
-                                        <ul>
-                                            <li><span>ESTADOS UNIDOS</span></li>
-                                            <li class="worlds-menu-sub">Califórnia</li>
-                                            <li class="worlds-menu-sub">Flórida</li>
-                                            <li class="worlds-menu-sub">Nevada</li>
-                                            <li class="worlds-menu-sub">Washington, DC</li>
-                                        </ul>
+                                          <ul>
+                                              <li><span>México</span></li>
+                                              <li class="worlds-menu-sub">Cidade do México</li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="col-xs-12 col-sm-12 col-md-4">
+                                  <a title="Europa" class="col-xs-12 col-sm-12 col-md-12 js-toggle-sub">Europa</a>
+                                  <ul class="col-xs-12 col-sm-12 col-md-12 sub-menu-worlds">
+                                      <li>
+                                          <ul>
+                                              <li><span>INGLATERRA</span></li>
+                                              <li class="worlds-menu-sub">Londres</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>PORTUGAL</span></li>
+                                              <li class="worlds-menu-sub">Lisboa</li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="col-xs-12 col-sm-12 col-md-4">
+                                  <a title="Ásia" class="col-xs-12 col-sm-12 col-md-12 js-toggle-sub">Ásia</a>
+                                  <ul class="col-xs-12 col-sm-12 col-md-12 sub-menu-worlds">
+                                      <li>
+                                          <ul>
+                                              <li><span>CHINA</span></li>
+                                              <li class="worlds-menu-sub">Beijing</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>CÓREIA DO SUL</span></li>
+                                              <li class="worlds-menu-sub">Seul</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>Líbano</span></li>
+                                              <li class="worlds-menu-sub">Beirute</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>EMIRADOS ÁRABES UNIDOS</span></li>
+                                              <li class="worlds-menu-sub">Dubai</li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
 
-                                        <ul>
-                                            <li><span>México</span></li>
-                                            <li class="worlds-menu-sub">Cidade do México</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="col-md-4">
-                                <a title="Europa" class="col-md-12">Europa</a>
-                                <ul class="col-md-12">
-                                    <li>
-                                        <ul>
-                                            <li><span>INGLATERRA</span></li>
-                                            <li class="worlds-menu-sub">Londres</li>
-                                        </ul>
-                                        <ul>
-                                            <li><span>PORTUGAL</span></li>
-                                            <li class="worlds-menu-sub">Lisboa</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="col-md-4">
-                                <a title="Ásia" class="col-md-12">Ásia</a>
-                                <ul class="col-md-12">
-                                    <li>
-                                        <ul>
-                                            <li><span>CHINA</span></li>
-                                            <li class="worlds-menu-sub">Beijing</li>
-                                        </ul>
-                                        <ul>
-                                            <li><span>CÓREIA DO SUL</span></li>
-                                            <li class="worlds-menu-sub">Seul</li>
-                                        </ul>
-                                        <ul>
-                                            <li><span>Líbano</span></li>
-                                            <li class="worlds-menu-sub">Beirute</li>
-                                        </ul>
-                                        <ul>
-                                            <li><span>EMIRADOS ÁRABES UNIDOS</span></li>
-                                            <li class="worlds-menu-sub">Dubai</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                        </div>
+                      </nav>
                     <div class="main buttonset hidden-xs hidden-sm">
-                        <button id="showRightPush">
+                        <button id="showRightPush" class="showRightPush">
                             <span class="more-menu">+</span>
                         </button>
                     </div>
@@ -154,16 +156,25 @@
         </div>
         <div class="container container-hover">
             <div class="col-xs-12 col-sm-12 col-md-4 menu-hover-mobile">
-                <a class="box-hover">Boutique <br>Sponsorship</a>
-                <span class="more-menu more-menu--close">+</span>
+                <a href="boutique-sponsorship.html" class="box-hover">
+                  Boutique <br>Sponsorship
+                  <span class="more-menu more-menu--close more-1">+</span>
+                </a>
+
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 menu-hover-mobile">
-                <a class="box-hover">Mídia</a>
-                <span class="more-menu more-menu--close">+</span>
+                <a href="midia.html" class="box-hover">
+                  Mídia
+                  <span class="more-menu more-menu--close more-2">+</span>
+                </a>
+
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 menu-hover-mobile">
-                <a class="box-hover">Esportes & <br>Educação</a>
-                <span class="more-menu more-menu--close">+</span>
+                <a href="sport-e-educacao.html" class="box-hover">
+                  Esportes & <br>Educação
+                  <span class="more-menu more-menu--close more-3">+</span>
+                </a>
+
             </div>
         </div>
     </div>
