@@ -127,7 +127,7 @@ form.navbar-form.navbar-right {
     width: 4%;
     margin-top: 2.9em;
 }
-button#showRightPush {
+button#showRightPush, button.showRightPush {
     background: none;
     box-shadow: none;
     border: none;
@@ -1468,7 +1468,7 @@ h2.typoh2 {
     background: none;
 }
 
-.active#showRightPush .more-menu {
+.active#showRightPush .more-menu, .active.showRightPush .more-menu {
     position: absolute;
     right: 30%;
 }
@@ -1572,7 +1572,7 @@ ul.top-nav__link li a.top-nav__link-first:hover {
 .container-hover .more-menu--close  {
     bottom: 0;
     position: fixed;
-    margin-left: 1px;
+    padding-left: 15px;
 }
 
 @media (max-width: 1024px){
@@ -1742,6 +1742,7 @@ footer {
     height: 80%;
     border-radius: 190px 190px 0 0;
     padding-top: 150px;
+    margin-bottom: -10px;
   }
 
   .container-hover .box-hover {
@@ -1769,6 +1770,10 @@ footer {
 }
 /*Media > 1024*/
 @media(max-width: 1024px) {
+  .home {
+    padding: 0 5px;
+  }
+
   .box-hover {
     position: relative;
     border: 0;
@@ -1778,6 +1783,13 @@ footer {
     float: left;
     letter-spacing: 8px;
     border-radius: 0;
+    line-height: 25px;
+    min-height: 50px;
+  }
+
+  .box-hover__title {
+    display: inline-block;
+    padding-top: 13px;
   }
 
   .more-1, .more-3 {
@@ -1836,12 +1848,21 @@ footer {
   }
 
   .container-hover .more-menu--close {
-    position: relative;
-    float: right;
+    padding-left: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 36px;
+    position: absolute;
+    right: 0;
   }
 
   .sub-menu-worlds {
     display: none;
+  }
+
+  .cbp-spmenu-vertical ul.worlds-menu li span {
+    font-size: 16px;
   }
 
   .img-globe {
@@ -1850,7 +1871,7 @@ footer {
     max-width: 61px;
   }
 
-  #showRightPush {
+  #showRightPush, .showRightPush {
     position: relative;
     top: 24px;
     right: 9px;
@@ -1886,9 +1907,9 @@ footer {
   .container-hover {
     position: absolute;
     bottom: 0;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     width: 90%;
-    left: 5%;
+    left: 4%;
     padding: 43% 0 0 0;
     border-bottom: 0;
     border-radius: 270px 270px 0 0;
@@ -1902,7 +1923,66 @@ footer {
 
 }
 
-
 .no-padding {
   padding: 0;
+}
+
+/*Contato*/
+@media (max-width: 1024px) {
+  .contact-bg .btn-xl2 {
+      width: 180px;
+  }
+
+  .contato {
+    background-position: 28% 0;
+    background-size: 270%;
+  }
+
+  #contact {
+    margin-top: 60%;
+  }
+}
+
+/*Sobre*/
+
+.content-sobre {
+  margin-top: 500px;
+}
+
+.content-sobre h1 {
+  font-size: 31px;
+  color: #8b6e4a;
+  font-family: 'Museo Sans 500';
+  margin-bottom: 60px;
+  letter-spacing: 16px;
+  line-height: 47px;
+}
+
+.content-sobre h1 span {
+  color: #1a355e;
+  text-decoration: underline;
+}
+
+.title-article-sobre  {
+  margin-top: 50px;
+}
+
+.img-center-sobre {
+  width: 100%;
+  max-width: 354px;
+}
+
+.title-article-sobre p {
+  color: #000000;
+  font-size: 22.92px;
+  line-height: 65px;
+  text-align: justify;
+}
+
+.title-article-sobre span {
+  font-weight: bold;
+}
+
+p.title-article-sobre__title {
+  color: #8b6e4a;
 }

@@ -33,10 +33,10 @@ showRightPush.onclick = function() {
 };
 
 $('.showRightPush').click(function () {
+  $(this).toggleClass('active');
   classie.toggle(body, 'cbp-spmenu-push-toleft');
   classie.toggle(menuRight, 'cbp-spmenu-open');
   disableOther('showRightPush');
-  $('.showRightPush').removeClass('active');
   $('.pages-menu').removeClass('hidden');
 });
 
@@ -71,8 +71,9 @@ function disableOther(button) {
 }
 
 $('#showRightPush2').click(function () {
-    $('.showRightPush').click();
+    $('#showRightPush').click();
     $('.showRightPush').removeClass('active');
+    $('#showRightPush').removeClass('active');
     $('.pages-menu').addClass('hidden');
     $('.worlds-menu').addClass('hidden');
 });
