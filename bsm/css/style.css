@@ -1945,11 +1945,11 @@ footer {
 
 /*Sobre*/
 
-.content-sobre {
+.content-page {
   margin-top: 500px;
 }
 
-.content-sobre h1 {
+.content-page h1 {
   font-size: 31px;
   color: #8b6e4a;
   font-family: 'Museo Sans 500';
@@ -1958,31 +1958,30 @@ footer {
   line-height: 47px;
 }
 
-.content-sobre h1 span {
+.content-page h1 span {
   color: #1a355e;
   text-decoration: underline;
 }
 
-.title-article-sobre  {
+.title-article-page  {
   margin-top: 50px;
 }
 
-.img-center-sobre {
+.img-center-page {
   width: 100%;
-  max-width: 354px;
 }
 
-.title-article-sobre p {
+.title-article-page p {
   color: #000000;
   font-size: 22.92px;
   line-height: 65px;
   text-align: justify;
 }
 
-.title-article-sobre span {
+.title-article-page span {
   font-weight: bold;
 }
 
-p.title-article-sobre__title {
+p.title-article-page__title {
   color: #8b6e4a;
 }
