@@ -1559,6 +1559,7 @@ ul.top-nav__link li a.top-nav__link-first:hover {
     font-size: 29px;
     letter-spacing: 15px;
     line-height: 39px;
+    background: rgba(0, 51, 153, 0.2);
 }
 
 .box-hover:hover {
@@ -1713,27 +1714,51 @@ footer {
 /*Start Sobre*/
 .sobre {
     background: url('../img/sobre-background.jpg')  no-repeat center top;
-    background-position: 46% 0;
+    background-position: 48% 0;
 }
 /*End Sobre*/
 
 /*Start Midia*/
 .midia {
     background: url('../img/midia-background.jpg')  no-repeat center top;
-    background-position: 46% 0;
+    background-position: 48% 0;
+}
+
+.button-radius-midia {
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 11px 40px;
+  border-radius: 20px;
+  float: left;
+  margin: 1% 0 1% 4%;
+  transition: 0.5s;
+}
+
+.button-radius-midia:hover {
+  box-shadow: -1px 0px 18px #b4b4b4;
+  transition: 0.5s;
+}
+
+.button-radius-midia-first {
+  margin-top: 30px;
+}
+
+.title-colection-button {
+  display: block;
+  padding-top: 24px;
 }
 /*End Midia*/
 
 /*Start Sport e Educacao*/
 .sportes-e-educacao {
     background: url('../img/sportes-e-educacao-background.jpg')  no-repeat center top;
-    background-position: 46% 0;
+    background-position: 48% 0;
 }
 /*End Sport e Educacao*/
 /*Start Sport e boutique sponsorship*/
 .boutique-sponsorship {
     background: url('../img/boutique-sponsorship-background.jpg')  no-repeat center top;
-    background-position: 46% 0;
+    background-position: 48% 0;
 }
 /*End Sport e boutique-sponsorship*/
 
@@ -1984,4 +2009,30 @@ footer {
 
 p.title-article-page__title {
   color: #8b6e4a;
+}
+
+
+.img-sobre-max-width {
+  max-width: 870px;
+}
+
+.img-boutique-max-width {
+  max-width: 910px;
+  margin: 30px 0;
+}
+
+.img-midia-max-width {
+  max-width: 800px;
+}
+
+.img-esport-max-width {
+  max-width: 656px;
+}
+
+.img-marcas {
+  margin-top: 40px;
+}
+
+.video-sport-e-educacao {
+  margin-top: 70px;
 }
