@@ -9,18 +9,31 @@ export class MenuToggleComponent {
   constructor() {}
 
   menuToggle = [
-    {name: 'menu', title: 'menu', routerLink: ''},
-    {name: 'sobre', title: 'sobre', routerLink: ''},
-    {name: 'brand', title: 'brand', routerLink: ''},
-    {name: 'mídia', title: 'mídia', routerLink: ''},
-    {name: 'esportes & educação', title: 'esportes & educação', routerLink: ''},
-    {name: 'BSM no mundo', title: 'BSM no mundo', routerLink: 'BSM no mundo'},
-    {name: 'contato', title: 'contato', routerLink: '/contato'},
+    {name: 'Menu', title: 'Menu', routerLink: ''},
+    {name: 'Sobre', title: 'Sobre', routerLink: ''},
+    {name: 'Boutique Sponsorship', title: 'Boutique Sponsorship', routerLink: ''},
+    {name: 'Mídia', title: 'Mídia', routerLink: ''},
+    {name: 'Sportes & Educação', title: 'Sportes & Educação', routerLink: ''},
+    {name: 'BSM no Mundo', title: 'BSM no Mundo', routerLink: ''},
+    {name: 'Contato', title: 'Contato', routerLink: '/contato'}
   ];
 
   toggleClassBody () {
     document.querySelector('body').classList.toggle('cbp-spmenu-push-toleft');
     document.querySelector('nav.top-nav-bottom').classList.toggle('cbp-spmenu-open');
+  }
+
+  showMenuSite () {
+    document.querySelector('.menu-site').classList.toggle('hidden');
+  }
+  
+  showMenuWorlds () {
+    document.querySelector('.worlds-menu').classList.toggle('hidden');
+  }
+
+  hideMenuText() {
+     document.querySelector('.menu-site').setAttribute("class", 'hidden');
+     document.querySelector('.worlds-menu').setAttribute("class", 'hidden');
   }
 
   backgroundBody (url) {

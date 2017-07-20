@@ -17,67 +17,163 @@
 </head>
 
 <body class="cbp-spmenu-push home"> <!-- data-vide-bg="video/ocean" -->
-    <div class="container">
+    <div class="container no-padding-mobile">
         <div class="header">
-            <div class="container">
-                <div class="col-md-11">
+            <div class="container no-padding-mobile">
+                <div class="col-md-11 hidden-xs hidden-sm">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html">
-                          <img src="img/bsm-logo.png" alt="">
+                          <img src="img/bsm-logo.png" alt="Logo BSM">
                         </a>
                     </div>
                     <img src="img/globe.png" alt="" class="img-globe">
+                </div>
+                <div class="hidden-md hidden-lg col-xs-12 col-sm-12">
+                    <div class="col-xs-8 col-sm-8 no-padding">
+                        <a class="navbar-brand" href="index.html">
+                          <img src="img/bsm-logo-mobile.png" alt="Logo BSM">
+                        </a>
+                    </div>
+                    <img src="img/globe.png" alt="" class="img-globe col-xs-3 col-sm-3">
+                    <div class="main buttonset hidden-md hidden-lg col-xs-1 col-sm-1">
+                        <button class="showRightPush">
+                            <span class="more-menu">&#43;</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="top-nav">
                     <nav class="top-nav-bottom cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
                         <button id="showRightPush2">
                             <span class="more-menu more-menu--close">&times;</span>
                         </button>
-                        <ul class="top-nav__link">
+                        <ul class="top-nav__link pages-menu hidden">
                             <li class="top-nav__link-first">
-                                <a href="index.html" class="top-nav__link-first" title="menu">menu</a>
+                                <a class="top-nav__link-first" title="menu">Menu</a>
                             </li>
                             <li>
-                                <a href="" title="sobre">sobre</a>
+                                <a href="sobre.html" title="sobre">Sobre</a>
                             </li>
                             <li>
-                                <a href="" title="brand">brand</a>
+                                <a href="boutique-sponsorship.html" title="Boutique Sponsorship">Boutique Sponsorship</a>
                             </li>
                             <li>
-                                <a href="" title="mídia">mídia</a>
+                                <a href="midia.html" title="mídia">Mídia</a>
                             </li>
                             <li>
-                                <a href="" title="esportes & educação">esportes & educação</a>
+                                <a href="sport-e-educacao.html" title="esportes & educação">Sportes & Educação</a>
                             </li>
                             <li>
-                                <a href="" title="BSM no mundo">BSM no mundo</a>
+                                <a href="" title="BSM no mundo">BSM no Mundo</a>
                             </li>
                             <li>
-                                <a href="contato.html" title="contato">contato</a>
+                                <a href="contato.html" title="contato">Contato</a>
                             </li>
                         </ul>
 
-                    </nav>
-                    <div class="main buttonset">
+                        <!-- Menu Mundos -->
+                        <div class="scroll-mobile">
+                          <ul class="top-nav__link col-xs-12 col-sm-12 col-md-12 worlds-menu hidden">
+                              <li class="col-xs-12 col-sm-12 col-md-12">
+                                  <a class="top-nav__link-first" title="menu">BSM no mundo</a>
+                              </li>
+                              <li class="col-xs-12 col-sm-12 col-md-4">
+                                  <a title="Américas" class="col-xs-12 col-sm-12 col-md-12 js-toggle-sub">Américas</a>
+                                  <ul class="col-xs-12 col-sm-12 col-md-12 sub-menu-worlds">
+                                      <li>
+                                          <ul>
+                                              <li><span>Brasil</span></li>
+                                              <li class="worlds-menu-sub">São Paulo</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>Bolívia</span></li>
+                                              <li class="worlds-menu-sub">La Paz</li>
+                                          </ul>
+
+                                          <ul>
+                                              <li><span>ESTADOS UNIDOS</span></li>
+                                              <li class="worlds-menu-sub">Califórnia</li>
+                                              <li class="worlds-menu-sub">Flórida</li>
+                                              <li class="worlds-menu-sub">Nevada</li>
+                                              <li class="worlds-menu-sub">Washington, DC</li>
+                                          </ul>
+
+                                          <ul>
+                                              <li><span>México</span></li>
+                                              <li class="worlds-menu-sub">Cidade do México</li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="col-xs-12 col-sm-12 col-md-4">
+                                  <a title="Europa" class="col-xs-12 col-sm-12 col-md-12 js-toggle-sub">Europa</a>
+                                  <ul class="col-xs-12 col-sm-12 col-md-12 sub-menu-worlds">
+                                      <li>
+                                          <ul>
+                                              <li><span>INGLATERRA</span></li>
+                                              <li class="worlds-menu-sub">Londres</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>PORTUGAL</span></li>
+                                              <li class="worlds-menu-sub">Lisboa</li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="col-xs-12 col-sm-12 col-md-4">
+                                  <a title="Ásia" class="col-xs-12 col-sm-12 col-md-12 js-toggle-sub">Ásia</a>
+                                  <ul class="col-xs-12 col-sm-12 col-md-12 sub-menu-worlds">
+                                      <li>
+                                          <ul>
+                                              <li><span>CHINA</span></li>
+                                              <li class="worlds-menu-sub">Beijing</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>CÓREIA DO SUL</span></li>
+                                              <li class="worlds-menu-sub">Seul</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>Líbano</span></li>
+                                              <li class="worlds-menu-sub">Beirute</li>
+                                          </ul>
+                                          <ul>
+                                              <li><span>EMIRADOS ÁRABES UNIDOS</span></li>
+                                              <li class="worlds-menu-sub">Dubai</li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    <div class="main buttonset hidden-xs hidden-sm">
                         <button id="showRightPush">
-                            <span class="more-menu">+</span>
+                            <span class="more-menu">&#43;</span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container container-hover">
-            <div class="col-xs-12 col-sm-12 col-md-4">
-                <a class="box-hover">brand</a>
-                <span class="more-menu more-menu--close">+</span>
+            <div class="col-xs-12 col-sm-12 col-md-4 menu-hover-mobile">
+                <a href="boutique-sponsorship.html" class="box-hover">
+                  <span>Boutique <br>Sponsorship</span>
+                  <span class="more-menu more-menu--close more-1">&#43;</span>
+                </a>
+
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4">
-                <a class="box-hover">mídia</a>
-                <span class="more-menu more-menu--close">+</span>
+            <div class="col-xs-12 col-sm-12 col-md-4 menu-hover-mobile">
+                <a href="midia.html" class="box-hover">
+                  <span class="box-hover__title">Mídia</span>
+                  <span class="more-menu more-menu--close more-2">&#43;</span>
+                </a>
+
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4">
-                <a class="box-hover">esportes & <br>educação</a>
-                <span class="more-menu more-menu--close">+</span>
+            <div class="col-xs-12 col-sm-12 col-md-4 menu-hover-mobile">
+                <a href="sport-e-educacao.html" class="box-hover">
+                  <span>Esportes & <br>Educação</span>
+                  <span class="more-menu more-menu--close more-3">&#43;</span>
+                </a>
+
             </div>
         </div>
     </div>

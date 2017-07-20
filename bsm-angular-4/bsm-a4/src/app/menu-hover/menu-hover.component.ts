@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class MenuHoverComponent  {
   menuHover = [
-    {title:'brand'},
-    {title:'mídia'},
-    {title:'esportes & \n educação'}
+    {title:'Boutique Sponsorship'},
+    {title:'Mídia'},
+    {title:'Sportes & \n Educação'}
   ];
 }

@@ -29,7 +29,25 @@ showRightPush.onclick = function() {
     classie.toggle(body, 'cbp-spmenu-push-toleft');
     classie.toggle(menuRight, 'cbp-spmenu-open');
     disableOther('showRightPush');
+    $('.pages-menu').removeClass('hidden');
 };
+
+$('.showRightPush').click(function () {
+  $(this).toggleClass('active');
+  classie.toggle(body, 'cbp-spmenu-push-toleft');
+  classie.toggle(menuRight, 'cbp-spmenu-open');
+  disableOther('showRightPush');
+  $('.pages-menu').removeClass('hidden');
+});
+
+
+$('.img-globe').click(function () {
+    classie.toggle(body, 'cbp-spmenu-push-toleft');
+    classie.toggle(menuRight, 'cbp-spmenu-open');
+    disableOther('showRightPush');
+    $('.showRightPush').removeClass('active');
+    $('.worlds-menu').removeClass('hidden');
+});
 
 //clean URL
 var url = window.location.href;
@@ -54,6 +72,18 @@ function disableOther(button) {
 
 $('#showRightPush2').click(function () {
     $('#showRightPush').click();
+    $('.showRightPush').removeClass('active');
+    $('#showRightPush').removeClass('active');
+    $('.pages-menu').addClass('hidden');
+    $('.worlds-menu').addClass('hidden');
+});
+
+$('.js-toggle-sub').click(function() {
+  var sizeScreen = $('body').width();
+  if (sizeScreen < 1025) {
+    $('.sub-menu-worlds').hide("slow");
+    $(this).next('ul').slideToggle("slow");
+  }
 });
 
 // classList support for class management
@@ -106,5 +136,7 @@ window.classie = {
   remove: removeClass,
   toggle: toggleClass
 };
+
+
 
 })( window );
