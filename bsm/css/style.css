@@ -1816,6 +1816,7 @@ footer {
     border-radius: 0;
     line-height: 25px;
     min-height: 50px;
+    background: none;
   }
 
   .box-hover__title {

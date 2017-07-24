@@ -87,8 +87,8 @@ $('#showRightPush2').click(function () {
 $('.js-toggle-sub').click(function() {
   var sizeScreen = $('body').width();
   if (sizeScreen < 1025) {
-    $('.sub-menu-worlds').hide("slow");
-    $(this).next('ul').slideToggle("slow");
+    $('.sub-menu-worlds').hide();
+    $(this).next('ul').show();
   }
 });
 
