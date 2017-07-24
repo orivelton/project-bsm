@@ -49,6 +49,12 @@ $('.img-globe').click(function () {
     $('.worlds-menu').removeClass('hidden');
 });
 
+$('.js-show-menu-mundos, .js-show-menu-mundos a').click(function(event) {
+  event.preventDefault();
+  $('.pages-menu').addClass('hidden');
+  $('.worlds-menu').removeClass('hidden');
+});
+
 //clean URL
 var url = window.location.href;
 if(url.lastIndexOf('contato') != -1) {
