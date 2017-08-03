@@ -1452,6 +1452,22 @@ h2.typoh2 {
     font-family: 'Museo Sans 300';
 }
 
+.close-wap {
+  background: rgba(0, 0, 0, 0.59);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  z-index: 300;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.cbp-spmenu-push-toleft .close-wap {
+  display: block;
+}
+
 .box-hover:hover .more-menu--close, .more-menu--close:hover {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -2092,4 +2108,8 @@ p.title-article-page__title {
   .img-marcas {
       width: 100%;
   }
+}
+
+.letter-spacing-0 {
+  letter-spacing: 0;
 }

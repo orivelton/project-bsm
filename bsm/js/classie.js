@@ -76,7 +76,7 @@ function disableOther(button) {
     }
 }
 
-$('#showRightPush2').click(function () {
+$('#showRightPush2, .close-wap').click(function () {
     $('#showRightPush').click();
     $('.showRightPush').removeClass('active');
     $('#showRightPush').removeClass('active');
