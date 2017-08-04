@@ -1034,7 +1034,7 @@ h2.typoh2 {
         font-size: 2em;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .banner h3 {
         margin: 3em auto 0;
     }
@@ -1507,7 +1507,7 @@ ul.top-nav__link li a {
     color: #1f355e;
     font-family: 'Museo Sans 300';
     text-align: left;
-    letter-spacing: 15px;
+    letter-spacing: 14px;
     display: inline-block;
     float: left;
     padding: 0 10px;
@@ -1595,7 +1595,7 @@ ul.top-nav__link li a.top-nav__link-first:hover {
     padding-left: 15px;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1023px){
     .box-hover {
         width: 324px;
     }
@@ -1698,9 +1698,8 @@ footer {
     padding: 0;
 }
 .cbp-spmenu-vertical ul.worlds-menu li {
-    width: none;
     text-align: left;
-    padding: 1em 0.4em;
+    padding: 1em 0 0.4em 0.4em;
 }
 
 .cbp-spmenu-vertical ul.worlds-menu li span {
@@ -1779,41 +1778,22 @@ footer {
 }
 /*End Sport e boutique-sponsorship*/
 
-@media(max-height: 480px) {
-  .container .container-hover {
-    height: 80%;
-    border-radius: 190px 190px 0 0;
-    padding-top: 150px;
-    margin-bottom: -10px;
-  }
 
-  .container-hover .box-hover {
-        letter-spacing: 7px;
-        line-height: 29px;
-  }
 
-  .container-hover .menu-hover-mobile {
-        margin: 7px 0;
+@media(min-width: 1024px) and (max-width: 1209px) {
+  .box-hover {
+    width: 314px;
   }
-
-  .box-hover-um {
-    margin-top: -14px;
-  }
-  .box-hover-dois{
-    margin-top: 9px;
-  }
-  .box-hover-tres{
-    margin-top: -12px;
-  }
-}
-
-@media(min-width: 1024px) {
-
 }
 /*Media > 1024*/
-@media(max-width: 1024px) {
+@media(max-width: 1023px) {
   .home {
-    padding: 0 5px;
+    padding: 0;
+  }
+
+  .container.container-hover {
+    padding: 0;
+    margin-top: 30%;
   }
 
   #contact label {
@@ -1827,7 +1807,7 @@ footer {
   .box-hover {
     position: relative;
     border: 0;
-    font-size: 17px;
+    font-size: 18px;
     padding: 0;
     width: 100%;
     float: left;
@@ -1835,6 +1815,12 @@ footer {
     border-radius: 0;
     line-height: 25px;
     min-height: 50px;
+    background: none;
+    padding-bottom: 35px;
+    margin-top: 35px;
+  }
+
+  .box-hover:hover {
     background: none;
   }
 
@@ -1905,7 +1891,8 @@ footer {
     font-size: 30px;
     line-height: 36px;
     position: absolute;
-    right: 0;
+    right: 10%;
+    margin-bottom: 0;
   }
 
   .sub-menu-worlds {
@@ -1951,35 +1938,24 @@ footer {
   }
 
   .menu-hover-mobile {
-      margin: 25px 0 0 0;
       padding-right: 0;
   }
 
-  .container-hover {
-    position: absolute;
-    bottom: 0;
-    border: 2px solid #FFFFFF;
-    width: 90%;
-    left: 4%;
-    padding: 43% 0 0 0;
-    border-bottom: 0;
-    border-radius: 270px 270px 0 0;
-    height: 80%;
-  }
-
-  .home {
-    background: url(../img/bsm-background-mobile.jpg);
-    background-size: cover;
+  .border-center-menu {
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666;
   }
 
 }
 
-.no-padding {
-  padding: 0;
-}
+.no-padding {padding: 0;}
+.no-padding-left {padding-left: 0;}
+.no-padding-right {padding-right: 0;}
+.no-padding-bottom {padding-bottom: 0;}
+.no-padding-top {padding-top: 0;}
 
 /*Contato*/
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .contact-bg .btn-xl2 {
       width: 180px;
   }
@@ -2061,6 +2037,8 @@ p.title-article-page__title {
 
 .video-sport-e-educacao {
   margin-top: 70px;
+  width: 960px;
+  height: 540px;
 }
 
 .table-multis-box {
@@ -2112,4 +2090,20 @@ p.title-article-page__title {
 
 .letter-spacing-0 {
   letter-spacing: 0;
+}
+
+.margin-top-link-menu {
+      margin-top: 15px;
+}
+
+
+@media (max-height: 414px){
+  .container.container-hover {
+      margin-top: 3%;
+  }
+
+    .home {
+      background-size: 140%;
+      background-position: 46% 50%;
+  }
 }
