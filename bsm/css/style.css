@@ -1941,9 +1941,9 @@ footer {
       padding-right: 0;
   }
 
-  .border-center-menu {
-    border-top: 2px solid #666666;
-    border-bottom: 2px solid #666666;
+  .border-top-menu {
+    background: url('../img/line-menu-hover-mobile.png');
+    background-repeat-y: no-repeat;
   }
 
 }
@@ -1957,7 +1957,9 @@ footer {
 /*Contato*/
 @media (max-width: 1023px) {
   .contact-bg .btn-xl2 {
-      width: 180px;
+    width: 140px;
+    padding: 4.5px;
+    font-size: 14px;      
   }
 
   .contato {
@@ -2054,7 +2056,7 @@ p.title-article-page__title {
   }
 
   .img-boutique-max-width {
-      margin: 0 0 40px 0;
+      margin: 60px 0 30px 0;
       width: 100%;
   }
 
@@ -2097,7 +2099,7 @@ p.title-article-page__title {
 }
 
 
-@media (max-height: 414px){
+@media (max-height: 450px){
   .container.container-hover {
       margin-top: 3%;
   }
