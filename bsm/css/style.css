@@ -1940,12 +1940,6 @@ footer {
   .menu-hover-mobile {
       padding-right: 0;
   }
-
-  .border-top-menu {
-    background: url('../img/line-menu-hover-mobile.png');
-    background-repeat-y: no-repeat;
-  }
-
 }
 
 .no-padding {padding: 0;}
@@ -1959,7 +1953,7 @@ footer {
   .contact-bg .btn-xl2 {
     width: 140px;
     padding: 4.5px;
-    font-size: 14px;      
+    font-size: 14px;
   }
 
   .contato {
