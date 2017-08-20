@@ -1734,6 +1734,13 @@ footer {
     background: url('../img/sobre-background.jpg')  no-repeat center top;
     background-position: 48% 0;
 }
+
+@media(max-width: 500px) {
+  .sobre {
+    background: url('../img/sobre/sobre-background-mobile.jpg') no-repeat;
+    background-size: contain;
+  }
+}
 /*End Sobre*/
 
 /*Start Midia*/
@@ -1769,6 +1776,13 @@ footer {
 .sportes-e-educacao {
     background: url('../img/sportes-e-educacao-background.jpg')  no-repeat center top;
     background-position: 48% 0;
+}
+
+@media(max-width: 500px) {
+  .sportes-e-educacao {
+    background: url('../img/sport-e-educacao/sportes-e-educacao-background-mobile.jpg') no-repeat;
+    background-size: contain;
+  }
 }
 /*End Sport e Educacao*/
 /*Start Sport e boutique sponsorship*/
@@ -2044,7 +2058,7 @@ p.title-article-page__title {
 
 /*Media < 500`*/
 @media(max-width: 500px) {
-  .sobre, .midia, .sportes-e-educacao, .boutique-sponsorship {
+  .midia, .boutique-sponsorship {
       background-position: 26% 0;
       background-size: 282%;
   }
