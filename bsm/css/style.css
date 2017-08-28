@@ -1602,8 +1602,12 @@ ul.top-nav__link li a.top-nav__link-first:hover {
 }
 
 .contato {
-  background: url('../img/contato-background-all.jpg')  no-repeat center top;
+  background: url('../img/contato/contato-background.jpg')  no-repeat center top;
   background-position: 46% 0;
+}
+
+.contato.en {
+  background: url('../img/contato/contato-background-en.jpg')  no-repeat center top;
 }
 
 #contact {
@@ -1731,8 +1735,12 @@ footer {
 
 /*Start Sobre*/
 .sobre {
-    background: url('../img/sobre-background.jpg')  no-repeat center top;
+    background: url('../img/sobre/sobre-background.jpg')  no-repeat center top;
     background-position: 48% 0;
+}
+
+.sobre.en {
+    background: url('../img/sobre/sobre-background-en.jpg')  no-repeat center top;
 }
 
 @media(max-width: 500px) {
@@ -1745,8 +1753,12 @@ footer {
 
 /*Start Midia*/
 .midia {
-    background: url('../img/midia-background.jpg')  no-repeat center top;
+    background: url('../img/midia/midia-background.jpg')  no-repeat center top;
     background-position: 48% 0;
+}
+
+.midia.en {
+    background: url('../img/midia/midia-background-en.jpg')  no-repeat center top;
 }
 
 .button-radius-midia {
@@ -1774,7 +1786,7 @@ footer {
 
 /*Start Sport e Educacao*/
 .sportes-e-educacao {
-    background: url('../img/sportes-e-educacao-background.jpg')  no-repeat center top;
+    background: url('../img/sport-e-educacao/sportes-e-educacao-background.jpg')  no-repeat center top;
     background-position: 48% 0;
 }
 
@@ -1787,7 +1799,7 @@ footer {
 /*End Sport e Educacao*/
 /*Start Sport e boutique sponsorship*/
 .boutique-sponsorship {
-    background: url('../img/boutique-sponsorship-background.jpg')  no-repeat center top;
+    background: url('../img/boutique-sponsorship/boutique-sponsorship-background.jpg')  no-repeat center top;
     background-position: 48% 0;
 }
 /*End Sport e boutique-sponsorship*/
