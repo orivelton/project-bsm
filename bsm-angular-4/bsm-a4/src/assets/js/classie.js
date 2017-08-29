@@ -24,6 +24,41 @@ var menuRight = document.getElementById('cbp-spmenu-s2'),
 showRightPush = document.getElementById('showRightPush'),
 body = document.body;
 
+$('#showRightPush').click(function () {
+  classie.toggle(this, 'active');
+    classie.toggle(body, 'cbp-spmenu-push-toleft');
+    classie.toggle(menuRight, 'cbp-spmenu-open');
+    disableOther('showRightPush');
+    $('.pages-menu').removeClass('hidden');
+});
+
+// showRightPush.onclick = function() {
+    
+// };
+
+$('.showRightPush').click(function () {
+  $(this).toggleClass('active');
+  classie.toggle(body, 'cbp-spmenu-push-toleft');
+  classie.toggle(menuRight, 'cbp-spmenu-open');
+  disableOther('showRightPush');
+  $('.pages-menu').removeClass('hidden');
+});
+
+
+$('.img-globe').click(function () {
+    classie.toggle(body, 'cbp-spmenu-push-toleft');
+    classie.toggle(menuRight, 'cbp-spmenu-open');
+    disableOther('showRightPush');
+    $('.showRightPush').removeClass('active');
+    $('.worlds-menu').removeClass('hidden');
+});
+
+$('.js-show-menu-mundos, .js-show-menu-mundos a').click(function(event) {
+  event.preventDefault();
+  $('.pages-menu').addClass('hidden');
+  $('.worlds-menu').removeClass('hidden');
+});
+
 //clean URL
 var url = window.location.href;
 if(url.lastIndexOf('contato') != -1) {
@@ -45,8 +80,20 @@ function disableOther(button) {
     }
 }
 
-$('#showRightPush2').click(function () {
+$('#showRightPush2, .close-wap').click(function () {
     $('#showRightPush').click();
+    $('.showRightPush').removeClass('active');
+    $('#showRightPush').removeClass('active');
+    $('.pages-menu').addClass('hidden');
+    $('.worlds-menu').addClass('hidden');
+});
+
+$('.js-toggle-sub').click(function() {
+  var sizeScreen = $('body').width();
+  if (sizeScreen < 1025) {
+    $('.sub-menu-worlds').hide();
+    $(this).next('ul').show();
+  }
 });
 
 // classList support for class management
@@ -99,5 +146,7 @@ window.classie = {
   remove: removeClass,
   toggle: toggleClass
 };
+
+
 
 })( window );

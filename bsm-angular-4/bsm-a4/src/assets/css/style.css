@@ -127,7 +127,7 @@ form.navbar-form.navbar-right {
     width: 4%;
     margin-top: 2.9em;
 }
-button#showRightPush {
+button#showRightPush, button.showRightPush {
     background: none;
     box-shadow: none;
     border: none;
@@ -1034,7 +1034,7 @@ h2.typoh2 {
         font-size: 2em;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .banner h3 {
         margin: 3em auto 0;
     }
@@ -1122,12 +1122,6 @@ h2.typoh2 {
     }
     .contact-bottom iframe {
         min-height: 300px;
-    }
-}
-@media (max-width: 767px) {
-    .navbar-header {
-        width: 50%;
-        float: left;
     }
 }
 @media (max-width: 736px) {
@@ -1219,9 +1213,6 @@ h2.typoh2 {
     }
 }
 @media (max-width: 480px) {
-    .navbar-header {
-        width: 55%;
-    }
     a.navbar-brand {
         font-size: 2.4em;
     }
@@ -1461,7 +1452,23 @@ h2.typoh2 {
     font-family: 'Museo Sans 300';
 }
 
-.more-menu--close:hover {
+.close-wap {
+  background: rgba(0, 0, 0, 0.59);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  z-index: 300;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.cbp-spmenu-push-toleft .close-wap {
+  display: block;
+}
+
+.box-hover:hover .more-menu--close, .more-menu--close:hover {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -1477,7 +1484,7 @@ h2.typoh2 {
     background: none;
 }
 
-.active#showRightPush .more-menu {
+.active#showRightPush .more-menu, .active.showRightPush .more-menu {
     position: absolute;
     right: 30%;
 }
@@ -1500,7 +1507,7 @@ ul.top-nav__link li a {
     color: #1f355e;
     font-family: 'Museo Sans 300';
     text-align: left;
-    letter-spacing: 15px;
+    letter-spacing: 14px;
     display: inline-block;
     float: left;
     padding: 0 10px;
@@ -1568,6 +1575,10 @@ ul.top-nav__link li a.top-nav__link-first:hover {
     font-size: 29px;
     letter-spacing: 15px;
     line-height: 39px;
+    background: rgba(0, 51, 153, 0.2);
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
 }
 
 .box-hover:hover {
@@ -1581,10 +1592,10 @@ ul.top-nav__link li a.top-nav__link-first:hover {
 .container-hover .more-menu--close  {
     bottom: 0;
     position: fixed;
-    margin-left: 1px;
+    padding-left: 15px;
 }
 
-@media (max-width: 1170px){
+@media (max-width: 1023px){
     .box-hover {
         width: 324px;
     }
@@ -1683,12 +1694,12 @@ footer {
     margin-left: 30px;
 }
 
-    .cbp-spmenu-vertical ul.worlds-menu ul {
+.cbp-spmenu-vertical ul.worlds-menu ul {
     padding: 0;
 }
 .cbp-spmenu-vertical ul.worlds-menu li {
     text-align: left;
-    padding: 1em 0.4em;
+    padding: 1em 0 0.4em 0.4em;
 }
 
 .cbp-spmenu-vertical ul.worlds-menu li span {
@@ -1721,26 +1732,374 @@ footer {
 /*Start Sobre*/
 .sobre {
     background: url('../img/sobre-background.jpg')  no-repeat center top;
-    background-position: 46% 0;
+    background-position: 48% 0;
 }
 /*End Sobre*/
 
 /*Start Midia*/
 .midia {
     background: url('../img/midia-background.jpg')  no-repeat center top;
-    background-position: 46% 0;
+    background-position: 48% 0;
+}
+
+.button-radius-midia {
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 11px 30px;
+  border-radius: 20px;
+  float: left;
+  margin: 1% 0 1% 4%;
+  transition: 0.5s;
+  width: 95%;
+  text-align: center;
+}
+
+.button-radius-midia:hover {
+  box-shadow: -1px 0px 18px #b4b4b4;
+  transition: 0.5s;
+}
+
+.title-colection-button {
+  display: block;
+  padding-top: 24px;
 }
 /*End Midia*/
 
 /*Start Sport e Educacao*/
 .sportes-e-educacao {
     background: url('../img/sportes-e-educacao-background.jpg')  no-repeat center top;
-    background-position: 46% 0;
+    background-position: 48% 0;
 }
 /*End Sport e Educacao*/
 /*Start Sport e boutique sponsorship*/
 .boutique-sponsorship {
     background: url('../img/boutique-sponsorship-background.jpg')  no-repeat center top;
-    background-position: 46% 0;
+    background-position: 48% 0;
 }
 /*End Sport e boutique-sponsorship*/
+
+
+
+@media(min-width: 1024px) and (max-width: 1209px) {
+  .box-hover {
+    width: 314px;
+  }
+}
+/*Media > 1024*/
+@media(max-width: 1023px) {
+  .home {
+    padding: 0;
+  }
+
+  .container.container-hover {
+    padding: 0;
+    margin-top: 30%;
+  }
+
+  #contact label {
+    font-size: 13px;
+  }
+
+  .form-control::-webkit-input-placeholder {
+      font-size: 13px;
+  }
+
+  .box-hover {
+    position: relative;
+    border: 0;
+    font-size: 18px;
+    padding: 0;
+    width: 100%;
+    float: left;
+    letter-spacing: 8px;
+    border-radius: 0;
+    line-height: 25px;
+    min-height: 50px;
+    background: none;
+    padding-bottom: 35px;
+    margin-top: 35px;
+  }
+
+  .box-hover:hover {
+    background: none;
+  }
+
+  .box-hover__title {
+    display: inline-block;
+    padding-top: 13px;
+  }
+
+  .more-1, .more-3 {
+        margin-top: -28px;
+  }
+
+  .top-nav__link {
+    margin-top: 37%;
+    padding-left: 13px;
+  }
+  .no-padding-mobile {
+    padding: 0;
+  }
+
+  .cbp-spmenu {
+    background-size: 317%;
+    background-position-x: 36px;
+  }
+
+  ul.top-nav__link.pages-menu li a {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .cbp-spmenu-vertical ul.worlds-menu {
+    margin-left: 4px;
+  }
+
+  .scroll-mobile ul.top-nav__link li a.top-nav__link-first,
+  .scroll-mobile ul.top-nav__link li a {
+    font-size: 16px;
+  }
+
+  .scroll-mobile ul.top-nav__link li > a::after  {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 12px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+    border-left: 10px solid #8b6e4a;
+  }
+
+  .scroll-mobile ul.top-nav__link li > a.top-nav__link-first::after  {
+    display: none;
+  }
+
+  .scroll-mobile {
+    overflow-y: scroll;
+    height: 100%;
+    margin-top: 38%;
+    width: 100%;
+    padding-bottom: 50%;
+  }
+
+  .container-hover .more-menu--close {
+    padding-left: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 36px;
+    position: absolute;
+    right: 10%;
+    margin-bottom: 0;
+  }
+
+  .sub-menu-worlds {
+    display: none;
+  }
+
+  .cbp-spmenu-vertical ul.worlds-menu li span {
+    font-size: 16px;
+  }
+
+  .img-globe {
+    float: left;
+    margin-top: 24px;
+    max-width: 61px;
+  }
+
+  #showRightPush, .showRightPush {
+    position: relative;
+    top: 24px;
+    right: 9px;
+  }
+
+  .more-menu {
+    width: 29px;
+    height: 29px;
+    font-size: 23px;
+    line-height: 18px;
+  }
+
+  .more-menu--close {
+    width: 53px;
+    height: 53px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .cbp-spmenu-open #showRightPush2 {
+    margin: -1px 0 0 -59px;
+  }
+
+  body  .cbp-spmenu-vertical {
+    width: 86.2%;
+  }
+
+  .menu-hover-mobile {
+      padding-right: 0;
+  }
+}
+
+.no-padding {padding: 0;}
+.no-padding-left {padding-left: 0;}
+.no-padding-right {padding-right: 0;}
+.no-padding-bottom {padding-bottom: 0;}
+.no-padding-top {padding-top: 0;}
+
+/*Contato*/
+@media (max-width: 1023px) {
+  .contact-bg .btn-xl2 {
+    width: 140px;
+    padding: 4.5px;
+    font-size: 14px;
+  }
+
+  .contato {
+    background-position: 28% 0;
+    background-size: 270%;
+  }
+
+  #contact {
+    margin-top: 60%;
+  }
+}
+
+/*Sobre*/
+
+.content-page {
+  margin-top: 500px;
+}
+
+.content-page h1 {
+  font-size: 31px;
+  color: #8b6e4a;
+  font-family: 'Museo Sans 500';
+  margin-bottom: 60px;
+  letter-spacing: 16px;
+  line-height: 47px;
+}
+
+.content-page h1 span {
+  color: #1a355e;
+  text-decoration: underline;
+}
+
+.title-article-page  {
+  margin-top: 50px;
+}
+
+.img-center-page {
+  width: 100%;
+}
+
+.title-article-page p {
+  color: #000000;
+  font-size: 22.92px;
+  line-height: 65px;
+  text-align: justify;
+}
+
+.title-article-page span {
+  font-weight: bold;
+}
+
+p.title-article-page__title {
+  color: #8b6e4a;
+}
+
+
+.img-sobre-max-width {
+  max-width: 870px;
+}
+
+.img-boutique-max-width {
+  max-width: 910px;
+  margin: 60px 0 90px 0;
+}
+
+.img-midia-max-width {
+  max-width: 800px;
+}
+
+.img-esport-max-width {
+  max-width: 656px;
+}
+
+.img-marcas {
+  margin-top: 40px;
+}
+
+.video-sport-e-educacao {
+  margin-top: 70px;
+  width: 960px;
+  height: 540px;
+}
+
+.table-multis-box {
+  width: 100%;
+}
+
+
+/*Media < 500`*/
+@media(max-width: 500px) {
+  .sobre, .midia, .sportes-e-educacao, .boutique-sponsorship {
+      background-position: 26% 0;
+      background-size: 282%;
+  }
+
+  .img-boutique-max-width {
+      margin: 60px 0 30px 0;
+      width: 100%;
+  }
+
+  .content-page {
+      margin-top: 290px;
+  }
+
+  .content-page h1 {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+
+  .title-article-page p {
+      font-size: 14px;
+      line-height: 40px;
+  }
+
+  .button-radius-midia {
+      margin: 2% auto;
+      width: 75%;
+      float: none;
+  }
+
+  .video-sport-e-educacao {
+      width: 100%;
+      height: 100%;
+  }
+
+  .img-marcas {
+      width: 100%;
+  }
+}
+
+.letter-spacing-0 {
+  letter-spacing: 0;
+}
+
+.margin-top-link-menu {
+      margin-top: 15px;
+}
+
+
+@media (max-height: 450px){
+  .container.container-hover {
+      margin-top: 3%;
+  }
+
+    .home {
+      background-size: 140%;
+      background-position: 46% 50%;
+  }
+}

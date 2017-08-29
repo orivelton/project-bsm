@@ -2406,7 +2406,7 @@ input[type="button"].btn-block {
 .glyphicon-cloud:before {
   content: "\2601";
 }
-.glyphicon-envelope:before {
+.glyphicon-ox-newletter__evelope:before {
   content: "\2709";
 }
 .glyphicon-pencil:before {
