@@ -1034,7 +1034,7 @@ h2.typoh2 {
         font-size: 2em;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .banner h3 {
         margin: 3em auto 0;
     }
@@ -1452,7 +1452,23 @@ h2.typoh2 {
     font-family: 'Museo Sans 300';
 }
 
-.more-menu--close:hover {
+.close-wap {
+  background: rgba(0, 0, 0, 0.59);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  z-index: 300;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.cbp-spmenu-push-toleft .close-wap {
+  display: block;
+}
+
+.box-hover:hover .more-menu--close, .more-menu--close:hover {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -1491,7 +1507,7 @@ ul.top-nav__link li a {
     color: #1f355e;
     font-family: 'Museo Sans 300';
     text-align: left;
-    letter-spacing: 15px;
+    letter-spacing: 14px;
     display: inline-block;
     float: left;
     padding: 0 10px;
@@ -1560,6 +1576,9 @@ ul.top-nav__link li a.top-nav__link-first:hover {
     letter-spacing: 15px;
     line-height: 39px;
     background: rgba(0, 51, 153, 0.2);
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
 }
 
 .box-hover:hover {
@@ -1576,15 +1595,19 @@ ul.top-nav__link li a.top-nav__link-first:hover {
     padding-left: 15px;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1023px){
     .box-hover {
         width: 324px;
     }
 }
 
 .contato {
-  background: url('../img/contato-background-all.jpg')  no-repeat center top;
+  background: url('../img/contato/contato-background.jpg')  no-repeat center top;
   background-position: 46% 0;
+}
+
+.contato.en {
+  background: url('../img/contato/contato-background-en.jpg')  no-repeat center top;
 }
 
 #contact {
@@ -1679,9 +1702,8 @@ footer {
     padding: 0;
 }
 .cbp-spmenu-vertical ul.worlds-menu li {
-    width: none;
     text-align: left;
-    padding: 1em 0.4em;
+    padding: 1em 0 0.4em 0.4em;
 }
 
 .cbp-spmenu-vertical ul.worlds-menu li span {
@@ -1713,34 +1735,47 @@ footer {
 
 /*Start Sobre*/
 .sobre {
-    background: url('../img/sobre-background.jpg')  no-repeat center top;
+    background: url('../img/sobre/sobre-background.jpg')  no-repeat center top;
     background-position: 48% 0;
+}
+
+.sobre.en {
+    background: url('../img/sobre/sobre-background-en.jpg')  no-repeat center top;
+}
+
+@media(max-width: 500px) {
+  .sobre {
+    background: url('../img/sobre/sobre-background-mobile.jpg') no-repeat;
+    background-size: contain;
+  }
 }
 /*End Sobre*/
 
 /*Start Midia*/
 .midia {
-    background: url('../img/midia-background.jpg')  no-repeat center top;
+    background: url('../img/midia/midia-background.jpg')  no-repeat center top;
     background-position: 48% 0;
+}
+
+.midia.en {
+    background: url('../img/midia/midia-background-en.jpg')  no-repeat center top;
 }
 
 .button-radius-midia {
   border: 1px solid #000;
   display: inline-block;
-  padding: 11px 40px;
+  padding: 11px 30px;
   border-radius: 20px;
   float: left;
   margin: 1% 0 1% 4%;
   transition: 0.5s;
+  width: 95%;
+  text-align: center;
 }
 
 .button-radius-midia:hover {
   box-shadow: -1px 0px 18px #b4b4b4;
   transition: 0.5s;
-}
-
-.button-radius-midia-first {
-  margin-top: 30px;
 }
 
 .title-colection-button {
@@ -1751,58 +1786,58 @@ footer {
 
 /*Start Sport e Educacao*/
 .sportes-e-educacao {
-    background: url('../img/sportes-e-educacao-background.jpg')  no-repeat center top;
+    background: url('../img/sport-e-educacao/sportes-e-educacao-background.jpg')  no-repeat center top;
     background-position: 48% 0;
+}
+
+.sportes-e-educacao.en {
+    background: url('../img/sport-e-educacao/sportes-e-educacao-background-EN.jpg')  no-repeat center top;
+}
+
+@media(max-width: 500px) {
+  .sportes-e-educacao {
+    background: url('../img/sport-e-educacao/sportes-e-educacao-background-mobile.jpg') no-repeat;
+    background-size: contain;
+  }
 }
 /*End Sport e Educacao*/
 /*Start Sport e boutique sponsorship*/
 .boutique-sponsorship {
-    background: url('../img/boutique-sponsorship-background.jpg')  no-repeat center top;
+    background: url('../img/boutique-sponsorship/boutique-sponsorship-background.jpg')  no-repeat center top;
     background-position: 48% 0;
 }
 /*End Sport e boutique-sponsorship*/
 
-@media(max-height: 480px) {
-  .container .container-hover {
-    height: 80%;
-    border-radius: 190px 190px 0 0;
-    padding-top: 150px;
-    margin-bottom: -10px;
-  }
 
-  .container-hover .box-hover {
-        letter-spacing: 7px;
-        line-height: 29px;
-  }
 
-  .container-hover .menu-hover-mobile {
-        margin: 7px 0;
+@media(min-width: 1024px) and (max-width: 1209px) {
+  .box-hover {
+    width: 314px;
   }
-
-  .box-hover-um {
-    margin-top: -14px;
-  }
-  .box-hover-dois{
-    margin-top: 9px;
-  }
-  .box-hover-tres{
-    margin-top: -12px;
-  }
-}
-/*Media < 1024*/
-@media(min-width: 1024px) {
-
 }
 /*Media > 1024*/
-@media(max-width: 1024px) {
+@media(max-width: 1023px) {
   .home {
-    padding: 0 5px;
+    padding: 0;
+  }
+
+  .container.container-hover {
+    padding: 0;
+    margin-top: 30%;
+  }
+
+  #contact label {
+    font-size: 13px;
+  }
+
+  .form-control::-webkit-input-placeholder {
+      font-size: 13px;
   }
 
   .box-hover {
     position: relative;
     border: 0;
-    font-size: 17px;
+    font-size: 18px;
     padding: 0;
     width: 100%;
     float: left;
@@ -1810,6 +1845,13 @@ footer {
     border-radius: 0;
     line-height: 25px;
     min-height: 50px;
+    background: none;
+    padding-bottom: 35px;
+    margin-top: 35px;
+  }
+
+  .box-hover:hover {
+    background: none;
   }
 
   .box-hover__title {
@@ -1879,7 +1921,8 @@ footer {
     font-size: 30px;
     line-height: 36px;
     position: absolute;
-    right: 0;
+    right: 10%;
+    margin-bottom: 0;
   }
 
   .sub-menu-worlds {
@@ -1925,37 +1968,22 @@ footer {
   }
 
   .menu-hover-mobile {
-      margin: 25px 0 0 0;
       padding-right: 0;
   }
-
-  .container-hover {
-    position: absolute;
-    bottom: 0;
-    border: 2px solid #FFFFFF;
-    width: 90%;
-    left: 4%;
-    padding: 43% 0 0 0;
-    border-bottom: 0;
-    border-radius: 270px 270px 0 0;
-    height: 80%;
-  }
-
-  .home {
-    background: url(../img/bsm-background-mobile.jpg);
-    background-size: cover;
-  }
-
 }
 
-.no-padding {
-  padding: 0;
-}
+.no-padding {padding: 0;}
+.no-padding-left {padding-left: 0;}
+.no-padding-right {padding-right: 0;}
+.no-padding-bottom {padding-bottom: 0;}
+.no-padding-top {padding-top: 0;}
 
 /*Contato*/
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .contact-bg .btn-xl2 {
-      width: 180px;
+    width: 140px;
+    padding: 4.5px;
+    font-size: 14px;
   }
 
   .contato {
@@ -2011,6 +2039,15 @@ p.title-article-page__title {
   color: #8b6e4a;
 }
 
+.title-times {
+  display: block;
+  padding: 93px 0 25px 0;
+  background: url('../img/boutique-sponsorship/bck-title-times.jpg') no-repeat;
+  font-size: 23px;
+  color: #836c51;
+  letter-spacing: 9px;
+}
+
 
 .img-sobre-max-width {
   max-width: 870px;
@@ -2018,7 +2055,7 @@ p.title-article-page__title {
 
 .img-boutique-max-width {
   max-width: 910px;
-  margin: 30px 0;
+  margin: 60px 0 90px 0;
 }
 
 .img-midia-max-width {
@@ -2035,4 +2072,92 @@ p.title-article-page__title {
 
 .video-sport-e-educacao {
   margin-top: 70px;
+  width: 960px;
+  height: 540px;
+}
+
+.table-multis-box {
+  width: 100%;
+}
+
+
+/*Media < 500`*/
+@media(max-width: 500px) {
+  .midia, .boutique-sponsorship {
+      background-position: 26% 0;
+      background-size: 282%;
+  }
+
+  .img-boutique-max-width {
+      margin: 60px 0 30px 0;
+      width: 100%;
+  }
+
+  .content-page {
+      margin-top: 290px;
+  }
+
+  .content-page h1 {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+
+  .title-article-page p {
+      font-size: 14px;
+      line-height: 40px;
+  }
+
+  .button-radius-midia {
+      margin: 2% auto;
+      width: 75%;
+      float: none;
+  }
+
+  .video-sport-e-educacao {
+      width: 100%;
+      height: 100%;
+  }
+
+  .img-marcas {
+      width: 100%;
+  }
+}
+
+.letter-spacing-0 {
+  letter-spacing: 0;
+}
+
+.margin-top-link-menu {
+      margin-top: 15px;
+}
+
+
+@media (max-height: 450px){
+  .container.container-hover {
+      margin-top: 3%;
+  }
+
+    .home {
+      background-size: 140%;
+      background-position: 46% 50%;
+  }
+}
+
+.link-language {
+    float: right;
+    display: block;
+    margin: 43px 60px 0 0px;
+    color: #fff;
+    font-size: 21px;
+    display: block;
+    text-align: center;
+    border: 4px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 33px;
+}
+
+.link-language:hover, .link-language:active, .link-language:focus {
+  text-decoration: none;
+  color: #ffffff;
 }

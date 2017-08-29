@@ -49,6 +49,12 @@ $('.img-globe').click(function () {
     $('.worlds-menu').removeClass('hidden');
 });
 
+$('.js-show-menu-mundos, .js-show-menu-mundos a').click(function(event) {
+  event.preventDefault();
+  $('.pages-menu').addClass('hidden');
+  $('.worlds-menu').removeClass('hidden');
+});
+
 //clean URL
 var url = window.location.href;
 if(url.lastIndexOf('contato') != -1) {
@@ -70,7 +76,7 @@ function disableOther(button) {
     }
 }
 
-$('#showRightPush2').click(function () {
+$('#showRightPush2, .close-wap').click(function () {
     $('#showRightPush').click();
     $('.showRightPush').removeClass('active');
     $('#showRightPush').removeClass('active');
@@ -81,8 +87,8 @@ $('#showRightPush2').click(function () {
 $('.js-toggle-sub').click(function() {
   var sizeScreen = $('body').width();
   if (sizeScreen < 1025) {
-    $('.sub-menu-worlds').hide("slow");
-    $(this).next('ul').slideToggle("slow");
+    $('.sub-menu-worlds').hide();
+    $(this).next('ul').show();
   }
 });
 
