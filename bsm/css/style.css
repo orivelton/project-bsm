@@ -1790,6 +1790,10 @@ footer {
     background-position: 48% 0;
 }
 
+.sportes-e-educacao.en {
+    background: url('../img/sport-e-educacao/sportes-e-educacao-background-EN.jpg')  no-repeat center top;
+}
+
 @media(max-width: 500px) {
   .sportes-e-educacao {
     background: url('../img/sport-e-educacao/sportes-e-educacao-background-mobile.jpg') no-repeat;
@@ -2035,6 +2039,15 @@ p.title-article-page__title {
   color: #8b6e4a;
 }
 
+.title-times {
+  display: block;
+  padding: 93px 0 25px 0;
+  background: url('../img/boutique-sponsorship/bck-title-times.jpg') no-repeat;
+  font-size: 23px;
+  color: #836c51;
+  letter-spacing: 9px;
+}
+
 
 .img-sobre-max-width {
   max-width: 870px;
@@ -2128,4 +2141,23 @@ p.title-article-page__title {
       background-size: 140%;
       background-position: 46% 50%;
   }
+}
+
+.link-language {
+    float: right;
+    display: block;
+    margin: 43px 60px 0 0px;
+    color: #fff;
+    font-size: 21px;
+    display: block;
+    text-align: center;
+    border: 4px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 33px;
+}
+
+.link-language:hover, .link-language:active, .link-language:focus {
+  text-decoration: none;
+  color: #ffffff;
 }
