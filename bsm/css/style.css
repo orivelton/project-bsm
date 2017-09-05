@@ -1608,6 +1608,7 @@ ul.top-nav__link li a.top-nav__link-first:hover {
 
 .contato.en {
   background: url('../img/contato/contato-background-en.jpg')  no-repeat center top;
+  background-position: 46% 0;
 }
 
 #contact {
@@ -1748,7 +1749,14 @@ footer {
     background: url('../img/sobre/sobre-background-mobile.jpg') no-repeat;
     background-size: contain;
   }
+
+  .sobre.en {
+    background: url('../img/sobre/sobre-background-mobile-en.jpg') no-repeat;
+    background-size: contain;
+  }
 }
+
+
 /*End Sobre*/
 
 /*Start Midia*/
@@ -1759,6 +1767,7 @@ footer {
 
 .midia.en {
     background: url('../img/midia/midia-background-en.jpg')  no-repeat center top;
+    background-position: 48% 0;
 }
 
 .button-radius-midia {
@@ -1797,6 +1806,11 @@ footer {
 @media(max-width: 500px) {
   .sportes-e-educacao {
     background: url('../img/sport-e-educacao/sportes-e-educacao-background-mobile.jpg') no-repeat;
+    background-size: contain;
+  }
+
+  .sportes-e-educacao.en {
+    background: url('../img/sport-e-educacao/sportes-e-educacao-background-mobile-en.jpg') no-repeat;
     background-size: contain;
   }
 }
@@ -1986,7 +2000,7 @@ footer {
     font-size: 14px;
   }
 
-  .contato {
+  .contato, .contato.en {
     background-position: 28% 0;
     background-size: 270%;
   }
@@ -2097,7 +2111,7 @@ p.title-article-page__title {
 
 /*Media < 500`*/
 @media(max-width: 500px) {
-  .midia, .boutique-sponsorship {
+  .midia, .midia.en, .boutique-sponsorship {
       background-position: 26% 0;
       background-size: 282%;
   }
@@ -2119,6 +2133,7 @@ p.title-article-page__title {
   .title-article-page p {
       font-size: 14px;
       line-height: 40px;
+      text-align: left;
   }
 
   .button-radius-midia {
@@ -2172,8 +2187,9 @@ p.title-article-page__title {
       margin-top: 3%;
   }
 
-    .home {
+	.home {
       background-size: 140%;
       background-position: 46% 50%;
   }
+
 }
