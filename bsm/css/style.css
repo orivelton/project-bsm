@@ -2193,3 +2193,15 @@ p.title-article-page__title {
   }
 
 }
+
+
+@media(min-width: 500px) and (max-width: 1024px) {
+  .sobre {
+    background-position: 30% 0px;
+    background-size: 223%;
+  }
+
+  .content-page {
+      margin-top: 60%;
+  }
+}
