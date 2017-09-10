@@ -1747,7 +1747,7 @@ footer {
 @media(max-width: 500px) {
   .sobre {
     background: url('../img/sobre/sobre-background-mobile.jpg') no-repeat;
-    background-size: contain;
+    background-size: 100%;
   }
 
   .sobre.en {
@@ -2194,7 +2194,7 @@ p.title-article-page__title {
 
 }
 
-
+/*Ajustes na horizontal*/
 @media(min-width: 500px) and (max-width: 1024px) {
   .sobre {
     background-position: 30% 0px;
